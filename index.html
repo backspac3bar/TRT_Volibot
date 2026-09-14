@@ -4,45 +4,108 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d12">
-  <meta name="description" content="Volibot 서비스 정보, 이용약관 및 개인정보 처리방침">
-  <title>Volibot</title>
+  <meta name="description" content="Volibot — 음악 재생, 서버 관리, 자동 음성방, 티켓과 역할 자동화를 한 번에 제공하는 Discord 봇">
+  <meta property="og:title" content="Volibot">
+  <meta property="og:description" content="Discord 서버 운영과 음악 재생을 더 간단하게.">
+  <meta property="og:type" content="website">
+  <title>Volibot · Discord Bot</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main class="shell">
-    <section class="hero card">
-      <div class="brand-mark" aria-hidden="true">▽</div>
-      <p class="eyebrow">VOLIBOT</p>
-      <h1><span>Volibot</span></h1>
-      <p class="lead">Discord 서버 관리와 음성 채널 운영을 더 간결하게.</p>
-      <div class="actions">
-        <a class="button primary" href="./terms/">이용약관</a>
-        <a class="button" href="./privacy/">개인정보 처리방침</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Volibot 홈">
+      <span class="brand-icon">V</span>
+      <span>Volibot</span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#features">기능</a>
+      <a href="#commands">명령어</a>
+      <a href="./terms/">이용약관</a>
+      <a href="./privacy/">개인정보</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">DISCORD BOT · PUBLIC</p>
+        <h1>서버 운영부터<br><span>음악 재생까지.</span></h1>
+        <p class="lead">Volibot은 음악, 서버 관리, 자동 음성방, 역할, 티켓과 운영 도구를 하나의 Discord 앱에서 제공합니다.</p>
+        <div class="actions">
+          <a class="button primary" href="#features">기능 살펴보기</a>
+          <a class="button" href="https://github.com/backspac3bar/Volibot">GitHub</a>
+        </div>
+        <div class="status-row" aria-label="서비스 특징">
+          <span><i class="dot online"></i> 공개 봇</span>
+          <span>Slash Commands</span>
+          <span>모바일 지원</span>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Volibot 요약">
+        <div class="bot-mark">V</div>
+        <div>
+          <p class="hero-card-label">VOLIBOT</p>
+          <h2>필요한 기능만, 한곳에.</h2>
+        </div>
+        <div class="mini-stats">
+          <div><strong>Music</strong><span>검색 · 재생 · 대기열</span></div>
+          <div><strong>Manage</strong><span>설정 · 기록 · 관리</span></div>
+          <div><strong>Voice</strong><span>자동 음성방</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="features" class="section shell">
+      <div class="section-head">
+        <p class="eyebrow">FEATURES</p>
+        <h2>서버에서 자주 쓰는 기능을 한 번에</h2>
+        <p>별도의 봇을 여러 개 추가하지 않아도 음악과 관리 기능을 함께 사용할 수 있습니다.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-no">01</span><h3>Music</h3><p>YouTube 기반 검색과 링크 재생, 대기열, 건너뛰기, 일시정지, 반복, 볼륨 등 음악 재생 기능을 제공합니다.</p></article>
+        <article class="feature-card"><span class="feature-no">02</span><h3>Server Management</h3><p>서버별 설정, 관리자 기록, 제재 도구, 메시지 정리 등 운영에 필요한 관리 기능을 제공합니다.</p></article>
+        <article class="feature-card"><span class="feature-no">03</span><h3>Voice Rooms</h3><p>입장 시 자동 음성방 생성, 소유자 관리, 이름·인원 제한 변경과 빈 방 정리를 지원합니다.</p></article>
+        <article class="feature-card"><span class="feature-no">04</span><h3>Roles & Tickets</h3><p>역할 자동화와 티켓 기능으로 반복적인 서버 운영 작업을 줄일 수 있습니다.</p></article>
+        <article class="feature-card"><span class="feature-no">05</span><h3>Logs</h3><p>입장·퇴장과 주요 관리자 활동을 기록해 서버에서 어떤 일이 있었는지 확인하기 쉽게 만듭니다.</p></article>
+        <article class="feature-card"><span class="feature-no">06</span><h3>Utilities</h3><p>선착순 모집, 유저·서버 정보 등 서버에서 바로 활용할 수 있는 편의 기능을 제공합니다.</p></article>
       </div>
     </section>
 
-    <section class="grid">
-      <article class="mini card">
-        <p class="number">01</p>
-        <h2>Voice Rooms</h2>
-        <p>자동 음성방 생성, 이름 및 인원 제한 변경 등 서버별 음성 채널 관리 기능을 제공합니다.</p>
-      </article>
-      <article class="mini card">
-        <p class="number">02</p>
-        <h2>Server Control</h2>
-        <p>관리자 설정, 입·퇴장 관리, 채널별 기능 설정 등 서버 운영을 위한 기능을 제공합니다.</p>
-      </article>
-      <article class="mini card">
-        <p class="number">03</p>
-        <h2>Utilities</h2>
-        <p>선착순 모집 등 Discord 서버에서 사용할 수 있는 편의 기능을 제공합니다.</p>
-      </article>
+    <section id="commands" class="section shell command-section">
+      <div class="section-head">
+        <p class="eyebrow">SLASH COMMANDS</p>
+        <h2>복잡한 접두사 없이 `/`로 사용</h2>
+      </div>
+      <div class="command-grid">
+        <div class="command-card"><code>/검색</code><span>음악 검색 및 재생</span></div>
+        <div class="command-card"><code>/대기열</code><span>재생 대기열 확인</span></div>
+        <div class="command-card"><code>/볼륨</code><span>재생 음량 조절</span></div>
+        <div class="command-card"><code>/관리자</code><span>서버 관리 기능</span></div>
+        <div class="command-card"><code>/설정</code><span>서버별 기능 설정</span></div>
+        <div class="command-card"><code>/상태</code><span>봇 상태 확인</span></div>
+      </div>
     </section>
 
-    <footer>
-      <span>Volibot</span>
-      <span>Updated 2026-09-11</span>
-    </footer>
+    <section class="section shell">
+      <div class="cta-card">
+        <div>
+          <p class="eyebrow">OPEN & TRANSPARENT</p>
+          <h2>Volibot은 계속 개선 중입니다.</h2>
+          <p>문제 제보와 소스 확인은 GitHub에서 할 수 있습니다.</p>
+        </div>
+        <a class="button primary" href="https://github.com/backspac3bar/Volibot">GitHub 열기</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer shell">
+    <div><strong>Volibot</strong><span>Discord server management & music bot</span></div>
+    <div class="footer-links">
+      <a href="./terms/">이용약관</a>
+      <a href="./privacy/">개인정보 처리방침</a>
+      <a href="https://github.com/backspac3bar/Volibot">GitHub</a>
+    </div>
+    <p>© 2026 Volibot · Updated 2026-09-14</p>
+  </footer>
 </body>
 </html>
